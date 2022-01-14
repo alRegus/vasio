@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="We sell Vasio watches" />
+    <link
+      rel="shortcut icon"
+      type="image/png"
+      href="img/SeekPng.com_watch-icon-png_2086773.png"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Vasio Watches</title>
+    <script src="script.js" defer></script>
+  </head>
+
+  <body>
+    <div class="modal">
+      <div class="modal-click" onclick="closeOnSide(this)"></div>
+      <div class="modal-content"></div>
+    </div>
+
+    <header class="menu">
+      <div class="logo">Vasio</div>
+
+      <nav>
+        <ul>
+          <li class="carousel-nav"><a href="#carousel">Demo</a></li>
+          <li class="info-nav"><a href="#info">About</a></li>
+          <li class="product-nav"><a href="#product">Products</a></li>
+          <li class="footer-nav"><a href="#footer">Contacts</a></li>
+        </ul>
+      </nav>
+
+      <div class="hamburger">
+        <input type="checkbox" onchange="slide(this)" />
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </header>
+
+    <section class="carousel" id="carousel">
+      <div class="mySlides fade w-one"></div>
+      <div class="mySlides fade w-two"></div>
+      <div class="mySlides fade w-three"></div>
+      <div class="mySlides fade w-four"></div>
+
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+      <div class="dots">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+      </div>
+    </section>
+
+    <section id="info" class="info">
+      <div class="info-firm">
+        Vasio is a Japanese multinational electronics manufacturing company
+        headquartered in Shibuya, Tokyo, Japan. Its products include
+        calculators, mobile phones, digital cameras, electronic musical
+        instruments, and analogue and digital watches. <br />
+        It was founded in 1946, and in 1957 introduced the world's first
+        entirely electric compact calculator. It was an early digital camera
+        innovator, and during the 1980s and 1990s, the company developed
+        numerous affordable home electronic keyboards for musicians along with
+        introducing the world's first mass-produced digital watches.
+      </div>
+      <div class="about">
+        Vasio's products include watches, calculators, electronic keyboards and
+        other digital products such as digital cameras (Exilim series), film
+        cameras, cash registers, laptops and sub-notebook computers, mobile
+        phones, PDAs (E-Data Bank), electronic dictionaries, digital diaries
+        (early PDAs), electronic games, computer printers, clocks, and portable
+        televisions.
+      </div>
+    </section>
+
+    <section id="product" class="product">
+      <div class="product-one" onclick="modal(this)">
+        <img src="./img/img-pr-one.jpg" alt="watch" />
+        <p style="display: none">
+          The digital-analog GA700SKE-7A of the new TRANSPARENT PACK Series
+          timepieces are created using semi-transparent resin parts. Everything
+          about this white-based model makes it the perfect choice as an
+          attractive fashion item.
+        </p>
+      </div>
+      <div class="product-two" onclick="modal(this)">
+        <img src="./img/img-pr-two.jpg" alt="watch" />
+        <p style="display: none">
+          These G-SHOCK G-MOVE GBDH1000 Series models pack heart rate
+          measurement and GPS capabilities into a choice of black or white
+          designs made of semitransparent resin. The result is powerfully
+          vibrant timepieces that look great no matter where they are worn..
+        </p>
+      </div>
+      <div class="product-three" onclick="modal(this)">
+        <img src="./img/img-pr-three.jpg" alt="watch" />
+        <p style="display: none">
+          The digital-analog carbon case GA2000SKE-8A of the new TRANSPARENT
+          PACK Series timepieces are created using semi-transparent resin parts.
+          Everything about this grey-based model makes it the perfect choice as
+          an attractive fashion item.
+        </p>
+      </div>
+      <div class="product-four" onclick="modal(this)">
+        <img src="./img/img-pr-four.jpg" alt="watch" />
+        <p style="display: none">
+          Introducing new compact G-SHOCK models that are great choices for
+          women who prefer G-SHOCK styling. Transparent styles were introduced
+          and became very popular back in the ’90s, making them an essential
+          part of G-SHOCK history. The faces of these models have a rose-gold
+          metallic finish, and their solid designs make them perfect wrist-worn
+          accents for everything from mode fashions, to street and casual
+          fashions. Base model for this lineup is the popular GA120.
+        </p>
+      </div>
+      <div class="product-five" onclick="modal(this)">
+        <img src="./img/img-pr-five.jpg" alt="watch" />
+        <p style="display: none">
+          The G-SHOCK MT-G combines metal and resin into forms of essential
+          functional elegance, and also provides TRIPLE G RESIST durability.
+          This new model add a selection of MT-G Series mid-size designs that is
+          design to fit well to the wrist. The faces, various parts, and inner
+          surfaces of the bands sport attractive accent colors. The case and
+          band of the all black ion-plated model has metallic blue accents. The
+          inside surfaces of the bands incorporates fine resin parts that allow
+          the use of attractive colors, and makes the band lightweight and
+          tough.
+        </p>
+      </div>
+      <div class="product-six" onclick="modal(this)">
+        <img src="./img/img-pr-six.jpg" alt="watch" />
+        <p style="display: none">
+          FROGMAN combines outstanding water resistance with solar capabilities.
+          A new type of receiver antenna and make case make it possible to pack
+          a that can pick up six time calibration signals around the globe into
+          a configuration that is ISO-level water resistant up to 200 meters.
+        </p>
+      </div>
+    </section>
+
+    <footer id="footer">
+      <div class="contacts">
+        <h3>Contacts</h3>
+        <a href="tel:123-456-7890-324-234-123">123-456-7890-324-234-123</a>
+        <p>Moldova</p>
+        <p>Chisinau</p>
+        <p>Albishoara 4 Street</p>
+      </div>
+      <div class="follow">
+        <a href="http://facebook.com" target="_blank"
+          ><i class="fab fa-facebook-square"></i
+        ></a>
+        <a href="http://twitter.com" target="_blank"
+          ><i class="fab fa-twitter-square"></i
+        ></a>
+        <a href="http://instagram.com" target="_blank"
+          ><i class="fab fa-instagram-square"></i
+        ></a>
+      </div>
+    </footer>
+  </body>
+</html>
